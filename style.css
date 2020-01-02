@@ -1,0 +1,39 @@
+:root {
+    --width: 1280px;
+    --Principal-coral: #ff5538;
+}
+
+.contenedor-gral {
+    width: var(--width);
+}
+
+.contenedor-header {
+    display: flex;
+    margin-top: 27px;
+    margin-left: 87px;
+    margin-right: 87px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 88px;
+}
+
+.Logo {
+    width: 77px;
+    height: 30px;
+    object-fit: contain;
+  }
+
+
+
+  .cont-banner {
+      height: 570px;
+      display: grid;
+      grid-template-columns: 559px 721px;
+  }
+
+  .banner-left {
+      display: flex;
+      flex-direction: column;
+      margin-left: 87px; 
+  }
+

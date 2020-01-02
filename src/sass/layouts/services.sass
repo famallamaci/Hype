@@ -1,0 +1,36 @@
+.services
+    text-align: center
+    margin-top: 20px
+    
+    .cardwrapper
+        display: grid
+        margin-top: 30px
+        grid-template-columns: 100%
+        grid-gap: 20px
+
+    h2
+        margin: 0 auto 17px
+
+
+    @media  (min-width: $portrait)
+        h2
+            width: 350px
+        .brief
+            width: 450px
+            margin: 0 auto
+    
+    @media (min-width: $landscape)
+
+        .cardwrapper
+            grid-template-columns: repeat(3,1fr)
+            grid-gap: 30px
+            margin-top: 62px
+
+        h2
+            width: 600px
+            margin: 0 auto 27px auto
+        .brief
+            width: 500px
+        
+        
+        

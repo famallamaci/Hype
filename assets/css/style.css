@@ -1,0 +1,267 @@
+:root {
+  --width: 1280px;
+  --Principal-coral: #ff5538;
+  --Principal-azul: #1c3e66;
+  --Principal-Gris: #999999;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Light), url(../fonts/Montserrat-Light.woff2) format("woff2"), url(../fonts/Montserrat-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Regular), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-SemiBold), url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+.boton {
+  font-family: Montserrat;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.boton-primario {
+  width: 159px;
+  height: 39px;
+  color: var(--Principal-coral);
+  border-color: var(--Principal-coral);
+}
+.boton-primario:hover {
+  color: #ffffff;
+  background-color: var(--Principal-coral);
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1220px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+.card {
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.card img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 9px;
+  width: 100%;
+}
+.card p {
+  font-weight: 400;
+  line-height: 1.38;
+  color: var(--Principal-Gris);
+  width: 100%;
+  margin-bottom: 21px;
+}
+.card a {
+  color: var(--Principal-coral);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1.43;
+}
+@media (min-width: 1024px) {
+  .card {
+    padding: 30px 28px;
+  }
+  .card h3 {
+    font-size: 28px;
+    margin-bottom: 19px;
+  }
+  .card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 36px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0 22px 0;
+}
+header img {
+  width: 77px;
+  height: 30px;
+  object-fit: contain;
+}
+
+main {
+  padding-top: 20px;
+}
+main h1 {
+  font-family: Montserrat;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--Principal-azul);
+  width: 80%;
+}
+main p {
+  font-family: Montserrat;
+  color: var(--Principal-azul);
+  width: 80%;
+}
+main img {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  main {
+    position: relative;
+    padding-top: 70px;
+    height: 50vw;
+  }
+  main h1, main p {
+    width: 200px;
+  }
+  main img {
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    right: 0;
+    width: 60vw;
+  }
+}
+@media (min-width: 1024px) {
+  main h1 {
+    font-size: 40px;
+    width: 280px;
+  }
+  main p {
+    width: 280px;
+  }
+}
+@media (min-width: 1220px) {
+  main {
+    padding-top: 90px;
+    height: 40vw;
+  }
+  main h1 {
+    width: 440px;
+    font-size: 60px;
+  }
+  main img {
+    width: 50vw;
+  }
+  main p {
+    width: 440px;
+  }
+}
+
+.services {
+  text-align: center;
+  margin-top: 20px;
+}
+.services .cardwrapper {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 100%;
+  grid-gap: 20px;
+}
+.services h2 {
+  margin: 0 auto 17px;
+}
+@media (min-width: 768px) {
+  .services h2 {
+    width: 350px;
+  }
+  .services .brief {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .services .cardwrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 62px;
+  }
+  .services h2 {
+    width: 600px;
+    margin: 0 auto 27px auto;
+  }
+  .services .brief {
+    width: 500px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: var(--Principal-azul);
+}
+
+.contenedor {
+  width: auto;
+  margin: 0 16px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    margin: 0 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor {
+    margin: 0 75px;
+  }
+}
+@media (min-width: 1220px) {
+  p {
+    font-size: 16px;
+  }
+
+  .contenedor {
+    width: 1106px;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

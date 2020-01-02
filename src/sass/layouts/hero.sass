@@ -1,0 +1,64 @@
+$wmobile: 80%
+$wportrait: 200px
+$wlandscape: 280px
+$wdesktop: 440px
+
+main
+    padding-top: 20px
+
+    h1
+        font-family: Montserrat
+        font-size: 28px
+        line-height: 1.2
+        font-weight: 400
+        color: var(--Principal-azul)
+        width: $wmobile
+
+    p
+        font-family: Montserrat
+        color: var(--Principal-azul)
+        width: $wmobile
+
+    img
+        margin-top: 20px
+    
+    @media (min-width: $portrait)
+        
+        position: relative
+        padding-top: 70px
+        height: 50vw
+        
+        h1,p
+            width: $wportrait
+
+        img
+            position: absolute
+            margin-top: 0
+            top: 0
+            right: 0
+            width: 60vw
+    
+    @media (min-width: $landscape)
+
+        h1
+            font-size: 40px
+            width: $wlandscape
+        
+        p
+            width: $wlandscape
+
+    @media (min-width: $desktop)
+        padding-top: 90px
+        height: 40vw
+
+        h1
+            width: $wdesktop
+            font-size: 60px
+        
+        img
+            width: 50vw
+        p
+            width: $wdesktop
+
+        
+        

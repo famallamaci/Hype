@@ -1,0 +1,39 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    width: 100vw
+    overflow-x: hidden
+    font-family: 'Montserrat', 'Open Sans', 'Helvetica Neue', sans-serif
+    font-weight: 400
+    color: var(--Principal-azul)
+
+.contenedor
+    width: auto
+    margin: 0 16px
+
+p
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.4
+
+img
+    display: block
+    width: 100%
+
+@media (min-width: $portrait)
+    .contenedor
+        margin: 0 32px
+
+@media (min-width: $landscape)
+    .contenedor
+        margin: 0 75px
+
+@media (min-width: $desktop)
+    p
+        font-size: 16px
+    .contenedor
+        width: 1106px
+        margin: 0 auto

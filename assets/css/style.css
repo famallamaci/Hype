@@ -56,6 +56,22 @@ h2 {
   }
 }
 
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.14;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1220px) {
+  h4 {
+    font-size: 28px;
+  }
+}
+
 .card {
   text-align: left;
   padding: 20px;
@@ -231,6 +247,39 @@ main img {
 @media (min-width: 2560px) {
   .services {
     background-size: cover;
+  }
+}
+
+.clientes {
+  margin-top: 30px;
+}
+.clientes h4 {
+  text-align: center;
+  color: var(--Principal-azul);
+}
+.clientes .contenedor-clientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.clientes .contenedor-clientes img {
+  height: 30px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .clientes {
+    margin-top: 60px;
+  }
+  .clientes .contenedor-clientes {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 200px;
+  }
+  .clientes img {
+    margin-bottom: 0px;
   }
 }
 

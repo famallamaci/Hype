@@ -1,6 +1,7 @@
 .services
     text-align: center
     margin-top: 20px
+    padding-bottom: 30px
     
     .cardwrapper
         display: grid
@@ -9,11 +10,17 @@
         grid-gap: 20px
 
     h2
-        margin: 0 auto 17px
+        margin: 0 auto 17px auto
 
 
     @media  (min-width: $portrait)
-        background-image: 
+        
+        background-image: url('../img/bg-services.svg')
+        background-repeat: no-repeat
+        background-position: 0 100%
+        background-size: contain
+        margin-top: 30px
+
         h2
             width: 350px
         .brief
@@ -21,6 +28,8 @@
             margin: 0 auto
     
     @media (min-width: $landscape)
+
+        padding-bottom: 100px
 
         .cardwrapper
             grid-template-columns: repeat(3,1fr)
@@ -32,6 +41,16 @@
             margin: 0 auto 27px auto
         .brief
             width: 500px
+    
+    @media (min-width: $desktop)
+
+        .cardwrapper
+            grid-gap: 40px
+
+    @media (min-width: 2560px)
+        background-size: cover
+        
+        
         
         
         

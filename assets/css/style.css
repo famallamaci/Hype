@@ -179,6 +179,7 @@ main img {
 .services {
   text-align: center;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 .services .cardwrapper {
   display: grid;
@@ -187,9 +188,16 @@ main img {
   grid-gap: 20px;
 }
 .services h2 {
-  margin: 0 auto 17px;
+  margin: 0 auto 17px auto;
 }
 @media (min-width: 768px) {
+  .services {
+    background-image: url("../img/bg-services.svg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: contain;
+    margin-top: 30px;
+  }
   .services h2 {
     width: 350px;
   }
@@ -199,6 +207,9 @@ main img {
   }
 }
 @media (min-width: 1024px) {
+  .services {
+    padding-bottom: 100px;
+  }
   .services .cardwrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -210,6 +221,16 @@ main img {
   }
   .services .brief {
     width: 500px;
+  }
+}
+@media (min-width: 1220px) {
+  .services .cardwrapper {
+    grid-gap: 40px;
+  }
+}
+@media (min-width: 2560px) {
+  .services {
+    background-size: cover;
   }
 }
 

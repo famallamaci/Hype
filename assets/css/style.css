@@ -3,6 +3,7 @@
   --Principal-coral: #ff5538;
   --Principal-azul: #1c3e66;
   --Principal-Gris: #999999;
+  --Secundario-Coral-Fondos: #fff5f3;
 }
 
 @font-face {
@@ -384,6 +385,40 @@ main img {
   .portfolio .contenedor-portfolio .contenedor-project .project-overlay {
     padding: 50px;
   }
+}
+
+.quotes {
+  padding: 30px 0 48px 0;
+}
+.quotes .avatar img {
+  width: 127px;
+  margin: 0 auto;
+}
+.quotes blockquote {
+  text-align: center;
+}
+.quotes blockquote .quote {
+  margin: 30px auto 0;
+  line-height: 1.14;
+  font-size: 18px;
+}
+@media (min-width: 1024px) {
+  .quotes blockquote .quote {
+    width: 630px;
+    font-size: 28px;
+  }
+}
+.quotes blockquote .autor {
+  margin: 15px 0;
+  font-size: 18px;
+  line-height: 1.33;
+  opacity: 0.5;
+  color: var(--Principal-azul);
+}
+.quotes blockquote img {
+  width: 60px;
+  height: 18px;
+  margin: 0 auto;
 }
 
 * {

@@ -1,15 +1,27 @@
 .boton
     font-family: Montserrat
-    border-radius: 6px
     font-size: 14px
     font-weight: 600
+    line-height: 1.14
+    border-radius: 6px
+    cursor: pointer
+    color: var(--Principal-coral)
 
     &-primario
         width: 159px
         height: 39px
-        color: var(--Principal-coral)
         border-color: var(--Principal-coral)
+        transition: background-color var(--transitions), color var(--transitions)
 
         &:hover
             color: #ffffff
             background-color: var(--Principal-coral)
+    &-secundario
+        width: 176px
+        height: 49px
+        background-color: var(--Principal-coral)
+        color: #fff
+        transition: var(--transitions)
+        border: none
+        &:hover
+            box-shadow: 0 2px 4px 0 rgba(255, 85, 56, 0.36)
